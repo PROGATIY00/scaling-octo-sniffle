@@ -12,11 +12,11 @@ client = discord.Client(intents=intents)
 
 member_cache = TTLCache(maxsize=1, ttl=300)  #This is a cache for 5 minutes to work with Discord's cache behaviour
 
-TOKEN = "your_bot_token_here"
+TOKEN = "token"
 
 @client.event
 async def on_ready():
-    guild = client.get_guild(00000000000000000000) # This is servers's ID (Rigth click on the server picture > Copy ID).
+    guild = client.get_guild(1492872293310005431) # This is servers's ID (Rigth click on the server picture > Copy ID).
     if guild is None:
         print("Unable to find guild.")
         return
